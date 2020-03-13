@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DeleMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dQL-jI-FBK">
+                                <rect key="frame" x="32" y="128" width="351" height="452"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCW-Gj-tE8">
+                                <rect key="frame" x="116" y="626" width="183" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="whh-oG-BoK"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="playEpisode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R8o-tR-k7D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wCW-Gj-tE8" firstAttribute="top" secondItem="dQL-jI-FBK" secondAttribute="bottom" constant="46" id="8UI-6m-JAr"/>
+                            <constraint firstItem="dQL-jI-FBK" firstAttribute="centerX" secondItem="wCW-Gj-tE8" secondAttribute="centerX" id="8h3-55-KaW"/>
+                            <constraint firstItem="dQL-jI-FBK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dca-vR-JMe"/>
+                            <constraint firstItem="dQL-jI-FBK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="WaO-b5-03d"/>
+                            <constraint firstItem="dQL-jI-FBK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="fI4-mg-1Dp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wCW-Gj-tE8" secondAttribute="bottom" constant="176" id="hb7-t7-NUK"/>
+                            <constraint firstItem="wCW-Gj-tE8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="kr9-pz-svh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="wCW-Gj-tE8" id="HuP-6o-NoC"/>
+                        <outlet property="portada" destination="dQL-jI-FBK" id="xRb-PS-11W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>
